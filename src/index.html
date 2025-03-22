@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-red-500">
+  <div class="area w-full h-screen fixed bg-gradient-to-l from-amber-400 to-amber-600">
+    <ul class="circles relative w-full h-full overflow-hidden">
+      <li class="circle circle1"></li>
+      <li class="circle circle2"></li>
+      <li class="circle circle3"></li>
+      <li class="circle circle4"></li>
+      <li class="circle circle5"></li>
+      <li class="circle circle6"></li>
+      <li class="circle circle7"></li>
+      <li class="circle circle8"></li>
+      <li class="circle circle9"></li>
+      <li class="circle circle10"></li>
+    </ul>
+  </div>
+
+  <header class="bg-white w-full h-52 text-white flex items-center justify-center text-5xl font-bold uppercase text-shadow">
+    <span>Polska Partia</span>
+    <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="h-4/5 relative mx-4">
+      <img src="../images/rew-static.png" alt="Static Image" 
+        class="h-full w-auto
+        object-cover transition-opacity duration-0 hover:opacity-0">
+      <img src="../images/rew-animated.gif" alt="GIF" 
+        class="absolute top-0 left-0 h-full w-auto 
+        object-cover opacity-0 transition-opacity duration-0 hover:opacity-100">
+    </a>
+    <span>Przyjaciół Piwa</span>
+  </header>
+
+  <section class="bg-white/[var(--bg-opacity)] [--bg-opacity:30%] w-3/4 mx-auto my-8 p-8 shadow-xl">
+    <h1 class="text-4xl font-bold">Lorem ipsum dolor sit amet.</h1>
+    <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+  </section>
+  <section class="bg-white/[var(--bg-opacity)] [--bg-opacity:30%] w-3/4 mx-auto my-8 p-8 shadow-xl">
+    <h1 class="text-4xl font-bold">Lorem ipsum dolor sit amet.</h1>
+    <p class="text-lg">Lorem<br>ipsum<br>dolor<br>sit<br>amet<br>consectetur<br>adipisicing<br>elit.<br>Quisquam,<br>quos.</p>
+  </section>
+  
+  <section class="bg-white/[var(--bg-opacity)] [--bg-opacity:30%] w-3/4 mx-auto my-8 p-8 shadow-xl text-center">
+    <input type="checkbox" id="toggle-spin" class="hidden">
+    
+    <label for="toggle-spin" class="cursor-pointer px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition">
+        Toggle Spin
+    </label>
+
+    <div class="w-96 h-96 rounded-full relative mt-4">
+        <div class="w-full h-full rounded-full absolute wheel-of-fortune spin-control"></div>
+    </div>
+  </section>
+
+  
+</body>
+</html>
