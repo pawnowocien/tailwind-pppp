@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <title>PPPP</title>
 </head>
 <body class="bg-red-500">
   <div class="area w-full h-screen fixed bg-gradient-to-l from-amber-400 to-amber-600">
@@ -23,13 +24,9 @@
 
   <header class="bg-white w-full h-52 text-white flex items-center justify-center text-5xl font-bold uppercase text-shadow">
     <p>Polska Partia</p>
-    <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="h-4/5 relative mx-4">
-      <img src="../images/rew-static.png" alt="Static Image" 
-        class="h-full w-auto
-        object-cover transition-opacity duration-0 hover:opacity-0">
-      <img src="../images/rew-animated.gif" alt="GIF" 
-        class="absolute top-0 left-0 h-full w-auto 
-        object-cover opacity-0 transition-opacity duration-0 hover:opacity-100">
+    <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="h-4/5 relative mx-4 group block">
+      <img src="../images/rew-static.png" alt="Static Image" class="absolute inset-0 w-full h-full group-hover:opacity-0">
+      <img src="../images/rew-animated.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100">
     </a>
     <p>Przyjaciół Piwa</p>
   </header>
@@ -148,12 +145,15 @@
           </td>
           <td class="px-6 py-3">27</td>
         </tr>
-        <tr class="hover:bg-amber-800/[var(--bg-opacity)] [--bg-opacity:10%]">
+        <tr class="group hover:bg-amber-800/[var(--bg-opacity)] [--bg-opacity:10%]">
           <td class="px-6 py-3">PPPP!!!!!</td>
           <td class="px-6 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
               <div class="w-327/10000 h-full bg-amber-500 border-r-2"></div>
-              <span class="pr-4">3,27 (za mało)</span>
+              <span class="pr-4">
+                <span class="text-transparent group-hover:text-black">ZA MAŁO</span>
+                <span>3,27</span>
+              </span>
             </div>
           </td>
           <td class="px-6 py-3">16</td>
