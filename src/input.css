@@ -5,8 +5,16 @@
     text-shadow: 0px 0px 10px oklch(0.555 0.163 48.998); 
 }
 
-.text-pppp-style {
+.text-pppp-l {
     text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a;
+    color: #0d0d0f;
+}
+.text-pppp-m {
+    text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a;
+    color: #0d0d0f;
+}
+.text-pppp-s {
+    text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a;
     color: #0d0d0f;
 }
 
