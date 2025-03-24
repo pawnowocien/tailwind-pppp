@@ -26,10 +26,10 @@
 
   <!-- Sidebar -->
   <input type="checkbox" id="sidebar-toggle" class="peer hidden">
-  <label for="sidebar-toggle" class="fixed top-4 left-4 z-30 p-2 bg-amber-600 text-white border-2 border-white rounded-md cursor-pointer">☰</label>
-  <div class="fixed inset-y-0 left-0 w-64 bg-amber-800 text-white transform -translate-x-full peer-checked:translate-x-0 transition-transform p-4 flex flex-col items-center">
+  <label for="sidebar-toggle" class="fixed top-4 left-4 z-30 p-2 bg-amber-600 text-white border-2 border-white rounded-md cursor-pointer peer-checked:bg-amber-800 peer-checked:border-amber-800 peer-checked:hover:bg-amber-700">☰</label>
+  <div class="fixed inset-y-0 left-0 w-64 bg-amber-800 text-white transform -translate-x-full peer-checked:translate-x-0 transition-transform p-4 flex flex-col items-center z-10">
       <ul>
-          <li class="mb-2"><a href="#glowy" class="block p-2 hover:bg-amber-700 rounded">Głowy</a></li>
+          <li class="mb-2"><a href="#wstep" class="block p-2 hover:bg-amber-700 rounded">Wstęp</a></li>
           <li class="mb-2"><a href="#wybory" class="block p-2 hover:bg-amber-700 rounded">Wyniki wyborów</a></li>
           <li class="mb-2"><a href="#czlonkowie" class="block p-2 hover:bg-amber-700 rounded">Skład</a></li>
           <li class="mb-2"><a href="#kolo" class="block p-2 hover:bg-amber-700 rounded">Koło Fortuny</a></li>
@@ -43,23 +43,21 @@
   </header>
   
   <!-- Leaders -->
-  <section id="glowy" class="bg-white/[var(--bg-opacity)] [--bg-opacity:30%] w-3/4 mx-auto my-8 p-8 shadow-xl">
+  <section id="wstep" class="bg-white/[var(--bg-opacity)] [--bg-opacity:30%] w-3/4 mx-auto my-8 p-8 shadow-xl">
     <!-- <h1 class="text-4xl font-bold">Głowy PPPP.</h1> -->
-    <div class="flex flex-row justify-evenly mx-auto w-3/4 gap-8">
-      <!-- <div class="flex flex-col items-center w-2/12"></div> -->
-      <div class="flex flex-col items-center w-5/12">
-        <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="w-full relative group block">
-          <img src="../images/rew-static.png" alt="Static Image" class="absolute inset-0 w-full h-full group-hover:opacity-0">
-          <img src="../images/rew-animated.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100">
+    <div class="flex flex-row justify-between mx-auto w-5/6 gap-8">
+
+      <div class="flex flex-col items-center w-1/3 h-full min-h-92 shadow-xl bg-amber-900/[var(--bg-opacity)] [--bg-opacity:30%] rounded">
+        <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="w-5/6 relative group block">
+          <img src="../images/rew-black-4-5.png" alt="Static Image" class="absolute inset-0 w-full h-full group-hover:opacity-0">
+          <img src="../images/rew-colored-4-5.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100">
         </a>
-        <p class="text-center text-xl font-semibold">Głowa <span class="font-bold">Janusza Rewińskiego</span><br>(głowy <span class="font-bold text-pppp-s">PPPP</span> w latach 1990-1992)</p>
+        <p class="text-center h-1/5 text-xl font-semibold">Głowa głowy <span class="font-bold text-pppp-s">PPPP</span> w latach 1990-1992 <br> tzn. <span class="font-bold">Janusza Rewińskiego</span></p>
       </div>
-      <div class="flex flex-col items-center w-3/12">
-        <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="w-full h-full relative group block">
-          <img src="../images/rew-static.png" alt="Static Image" class="absolute place-self-center inset-0 w-full h-auto group-hover:opacity-0">
-          <img src="../images/rew-animated.gif" alt="GIF" class="absolute place-self-center inset-0 w-full h-auto opacity-0 group-hover:opacity-100">
-        </a>
-        <p class="text-center text-xl font-semibold">Głowa <span class="font-bold">Leszka Bubla</span><br>(głowy <span class="font-bold text-pppp-s">PPPP</span> w latach 1992-1993)</p>
+
+      <div class="flex flex-col items-center w-1/2 h-full min-h-92 shadow-xl bg-white/[var(--bg-opacity)] [--bg-opacity:30%] rounded">
+        <h1 class="my-2 text-4xl font-bold text-pppp-m">Lorem ipsum dolor sit amet.</h1>
+        <p class="text-lg mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
       </div>
     </div>
   </section>
