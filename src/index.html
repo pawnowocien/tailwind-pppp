@@ -54,12 +54,18 @@
           <img src="../images/rew-black-4-5.png" alt="Static Image" class="absolute inset-0 w-full h-full group-hover:opacity-0">
           <img src="../images/rew-colored-4-5.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100">
         </a>
-        <p class="text-center h-1/5 text-xl font-semibold p-1">Głowa głowy <span class="font-bold text-pppp-s">PPPP</span> w latach 1990-1992 <br> tzn. <span class="font-bold">Janusza Rewińskiego</span></p>
+        <p class="text-center h-1/5 text-xl font-semibold p-1">Głowa głowy
+          <span class="font-bold text-pppp-s">PPPP</span>
+          w latach 1990-1992, założyciela partii,
+          <span class="font-bold">Janusza Rewińskiego</span>
+        </p>
       </div>
 
-      <div class="flex flex-col items-center w-1/2 h-max min-h-92 shadow-xl bg-white/30 rounded">
-        <h1 class="my-2 text-4xl font-bold text-pppp-m">Lorem ipsum dolor sit amet.</h1>
-        <p class="text-lg mx-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+      <div class="flex flex-col w-1/2 h-max min-h-92 shadow-xl bg-white/30 rounded p-2">
+        <h1 class="my-2 text-3xl font-bold text-center"><span class="text-pppp-m">Polska Partia Przyjaciół Piwa</span> - że co?</h1>
+        <p class="p-2 text-lg mx-4 text-justify">Polska Partia Przyjaciół Piwa (<span class="text-pppp-s">PPPP</span>) to jedna z najważniejszych partii w historii Polski. Powstała na początku lat 90. jako żart – miała promować kulturę spokojnego picia piwa zamiast hałaśliwych knajp i wódczanych libacji. Ku zaskoczeniu wszystkich, w wyborach 1991 roku zdobyła aż 16 mandatów w Sejmie.</p>
+        <p class="p-2 text-lg mx-4 text-justify">Po wejściu do polityki sprawy się trochę skomplikowały – partia podzieliła się na frakcje Małego i Dużego Piwa, a później zniknęła ze sceny. Mimo to PPPP do dziś jest symbolem geniuszu polskiej polityki i dowodem na to, że czasem najlepsze pomysły rodzą się przy kuflu.</p>
+        <p class="p-2 text-right text-black/80">Na podstawie <a href="https://pl.wikipedia.org/wiki/Polska_Partia_Przyjaci%C3%B3%C5%82_Piwa" target="_blank" class="text-sky-700/80 hover:underline"></ahref>Wikipedii</a></p>
       </div>
     </div>
   </section>
@@ -80,7 +86,12 @@
       <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50">Chronić środowisko, podporządkowując tej idei wszelką działalność, by nie stać się śmietnikiem Europy, a naszym dzieciom pozostawić czystą ZIEMIĘ.</li>
       <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50">Promować niskoprocentowe piwo zamiast wódki, czyste i gościnne kluby, puby i piwiarnie uczynić sympatycznym miejscem relaksujących spotkań.</li>
     </ul>
-    <p class="text-lg">(Na podstawie https://repozytorium.amu.edu.pl/server/api/core/bitstreams/989415a9-4cad-4ec3-8219-a3ac2dadccb8/content)<br>https://www.reddit.com/r/PolskaPolityka/comments/1b4sxh9/przegl%C4%85d_partii_polska_partia_przyjaci%C3%B3%C5%82_piwa/</p>
+    <p class="p-2 text-right text-black/80">
+      Na podstawie
+      <a href="https://repozytorium.amu.edu.pl/server/api/core/bitstreams/989415a9-4cad-4ec3-8219-a3ac2dadccb8/content" target="_blank" class="text-sky-700/80 hover:underline"></ahref>Leksykonu polskich partii politycznych</a>
+      pozyskanego z
+      <a href="https://www.reddit.com/r/PolskaPolityka/comments/1b4sxh9/przegl%C4%85d_partii_polska_partia_przyjaci%C3%B3%C5%82_piwa/" target="_blank" class="text-sky-700/80 hover:underline"></ahref>posta</a>
+    </p>
   </section>
 
 
@@ -220,7 +231,7 @@
           <td class="px-6 py-3">16</td>
         </tr>
         <tr class="hover:bg-amber-800/10">
-          <td class="px-6 py-3">uselessy</td>
+          <td class="px-6 py-3">Partie gorsze</td>
           <td class="px-6 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
               <div class="w-1287/10000 h-full bg-gray-400 border-r-2"></div>
@@ -272,23 +283,29 @@
       </div>
     </div>
   </section>
-  
 
+  
   <!-- Spinning wheel -->
   <section id="kolo" class="bg-white/30 w-3/4 mx-auto my-8 p-8 shadow-xl text-center items-center">
     <h1 class="text-4xl font-bold text-center">Koło Fortuny</h1>
-    <div class="flex flex-row items-center justify-around">
-      <input type="checkbox" id="toggle-spin" class="hidden" checked>
-      <div class="w-1/2">
-        <div class="max-w-2/3 w-96 aspect-square relative mt-4 flex items-center">
-          <div class="w-full h-full rounded-full absolute wheel-of-fortune spin-control"></div>
-          <div class="w-1/2 h-1 bg-cyan-700 absolute left-5/6"></div>
-        </div>
-      </div>
+    <div class="flex flex-row items-center justify-evenly">
 
-      <label for="toggle-spin" class="select-none border-2 border-amber-950 cursor-pointer px-4 py-2 bg-amber-900 text-white rounded-lg shadow-md hover:bg-amber-950 transition">
-        Toggle Spin
-      </label>
+
+      <div class="w-2/3 flex flex-row items-center relative">
+        <input type="checkbox" id="toggle-spin" class="hidden peer" checked>
+
+        <div class="w-96 aspect-square">
+          <div class="w-full h-full rounded-full wheel-of-fortune spin-control border-2"></div>
+        </div>
+        <div class="relative w-20 h-20 aspect-square">
+          <div class="absolute bg-red-500 w-full h-full" style="clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0% 50%);"></div>
+          <div class="absolute bg-red-800 w-full h-full" style="clip-path: polygon(75% 50%, 0 50%, 100% 100%);"></div>
+        </div>
+
+        <span class="flex items-center justify-center text-2xl w-25 h-20 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 absolute right-25 border-b-12 border-t-12 border-l-12 border-amber-100">OFF</span>
+        <span class="flex items-center justify-center text-2xl w-25 h-20 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 absolute right-0  border-b-12 border-t-12 border-r-12 border-amber-100">ON</span>
+        <label for="toggle-spin" class="w-50 h-20 inline-flex items-center p-2 rounded-md cursor-pointer absolute right-0"></label>
+      </div>
 
       <ul class="flex flex-col">
         <li class="h-14 flex flex-row items-center gap-2">
@@ -328,6 +345,7 @@
           <div>Stout</div>
         </li>
       </ul>
+  
     </div>
 
   </section>
