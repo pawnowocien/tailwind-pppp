@@ -6,7 +6,7 @@
   <link href="./output.css" rel="stylesheet">
   <title>PPPP</title>
 </head>
-<body class="bg-red-500">
+<body class="bg-amber-500">
 
   <!-- Background -->
   <div class="area w-full h-screen fixed bg-gradient-to-l from-amber-400 to-amber-600">
@@ -33,7 +33,7 @@
           <li class="mb-2"><a href="#przykazania" class="block p-2 hover:bg-amber-700 rounded">10 Przykazań</a></li>
           <li class="mb-2"><a href="#cytaty" class="block p-2 hover:bg-amber-700 rounded">Cytaty</a></li>
           <li class="mb-2"><a href="#wybory" class="block p-2 hover:bg-amber-700 rounded">Wyniki Wyborów</a></li>
-          <li class="mb-2"><a href="#czlonkowie" class="block p-2 hover:bg-amber-700 rounded">Skład</a></li>
+          <li class="mb-2"><a href="#czlonkowie" class="block p-2 hover:bg-amber-700 rounded">Członkowie PPPP</a></li>
           <li class="mb-2"><a href="#kolo" class="block p-2 hover:bg-amber-700 rounded">Koło Fortuny</a></li>
       </ul>
   </div>
@@ -43,7 +43,7 @@
   <header class="bg-white w-full h-52 flex items-center justify-center text-6xl font-bold uppercase text-white text-shadow">
     <p>Polska Partia Przyjaciół Piwa</p>
   </header>
-  
+
   <!-- Introduction -->
   <section id="wstep" class="bg-white/30 w-3/4 mx-auto my-8 p-8 shadow-xl">
     <!-- <h1 class="text-4xl font-bold">Głowy PPPP.</h1> -->
@@ -90,7 +90,7 @@
       Na podstawie
       <a href="https://repozytorium.amu.edu.pl/server/api/core/bitstreams/989415a9-4cad-4ec3-8219-a3ac2dadccb8/content" target="_blank" class="text-sky-700/80 hover:underline"></ahref>Leksykonu polskich partii politycznych</a>
       pozyskanego z
-      <a href="https://www.reddit.com/r/PolskaPolityka/comments/1b4sxh9/przegl%C4%85d_partii_polska_partia_przyjaci%C3%B3%C5%82_piwa/" target="_blank" class="text-sky-700/80 hover:underline"></ahref>posta</a>
+      <a href="https://www.reddit.com/r/PolskaPolityka/comments/1b4sxh9/przegl%C4%85d_partii_polska_partia_przyjaci%C3%B3%C5%82_piwa/" target="_blank" class="text-sky-700/80 hover:underline"></ahref>tego posta</a>
     </p>
   </section>
 
@@ -294,62 +294,67 @@
       <div class="w-2/3 flex flex-row items-center relative">
         <input type="checkbox" id="toggle-spin" class="hidden peer" checked>
 
-        <div class="w-96 aspect-square">
-          <div class="w-full h-full rounded-full wheel-of-fortune spin-control border-2"></div>
-        </div>
-        <div class="relative w-20 h-20 aspect-square">
-          <div class="absolute bg-red-500 w-full h-full" style="clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0% 50%);"></div>
-          <div class="absolute bg-red-800 w-full h-full" style="clip-path: polygon(75% 50%, 0 50%, 100% 100%);"></div>
+        <div class="w-7/10 aspect-4/3 flex flex-row items-center">
+          <div class="h-full w-3/4 rounded-full wheel-of-fortune spin-control border-2"></div>
+          <div class="h-full w-1/4 items-center flex">
+            <div class="relative h-1/3 aspect-square ">
+              <div class="absolute bg-red-500 w-full h-full" style="clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0% 50%);"></div>
+              <div class="absolute bg-red-800 w-full h-full" style="clip-path: polygon(75% 50%, 0 50%, 100% 100%);"></div>
+            </div>
+          </div>
         </div>
 
-        <span class="flex items-center justify-center text-2xl w-25 h-20 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 absolute right-25 border-b-12 border-t-12 border-l-12 border-amber-100">OFF</span>
-        <span class="flex items-center justify-center text-2xl w-25 h-20 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 absolute right-0  border-b-12 border-t-12 border-r-12 border-amber-100">ON</span>
+        <span class="flex items-center justify-center text-2xl w-1/10 aspect-2/1 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 absolute right-1/10 border-b-12 border-t-12 border-l-12 border-amber-100">OFF</span>
+        <span class="flex items-center justify-center text-2xl w-1/10 aspect-2/1 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 absolute right-0  border-b-12 border-t-12 border-r-12 border-amber-100">ON</span>
         <label for="toggle-spin" class="w-50 h-20 inline-flex items-center p-2 rounded-md cursor-pointer absolute right-0"></label>
       </div>
 
       <ul class="flex flex-col">
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#FFE696] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#FFE696] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Pszeniczne</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#FFCC66] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#FFCC66] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Jasny lager</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#F0B450] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#F0B450] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Pilzner</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#DC783C] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#DC783C] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Ale</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#C85A32] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#C85A32] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Marcowe</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#BE6428] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#BE6428] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Koźlak</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#3C2814] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#3C2814] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Porter</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#1E140A] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#1E140A] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Ciemny lager</div>
         </li>
         <li class="h-14 flex flex-row items-center gap-2">
-          <div class="mx-2 rounded-xl bg-[#140A05] h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping mx-2 rounded-xl bg-[#140A05] h-10 aspect-square border-2 border-amber-950"></div>
           <div>Stout</div>
         </li>
       </ul>
-  
     </div>
-
   </section>
 
-  
+
+  <footer class="bg-transparent w-full flex flex-row items-center justify-center text-lg align-middle gap-2">
+    <div class="h-full flex-auto rounded-tr-2xl bg-amber-950 p-2 text-right"><a href=https://github.com/pawnowocien/tailwind-pppp class="text-sky-300/80 hover:underline">Repozytorium strony</a></div>
+    <div class="h-full flex-none rounded-t-2xl  bg-amber-800 p-2">Autor strony: <span class="font-semibold">Paweł Nowocień</span></div>
+    <div class="h-full flex-auto rounded-tl-2xl bg-amber-600 p-2 text-left"><a href=https://pawnowocien.github.io/uni_projects.html class="text-sky-200/80 hover:underline">Pozostałe projekty AWWW</a></div>
+  </footer>  
 </body>
 </html>
