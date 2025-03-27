@@ -1,21 +1,37 @@
 @import "./circles.css";
 @import "tailwindcss";
 
-.text-shadow {
-    text-shadow: 0px 0px 10px oklch(0.555 0.163 48.998); 
+@theme {
+    --color-twitter-blue: #1DA1F2;
+
 }
 
-.text-pppp-l {
-    text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a;
-    color: #0d0d0f;
+@layer utilities {
+    .text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
+    .text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
+    .text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    @media (min-width: 40rem) {
+        .sm\:text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
+        .sm\:text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
+        .sm\:text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    }
+    @media (min-width: 48rem) {
+        .md\:text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
+        .md\:text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
+        .md\:text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    }
+    @media (min-width: 64rem) {
+        .lg\:text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
+        .lg\:text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
+        .lg\:text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    }
 }
-.text-pppp-m {
-    text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a;
-    color: #0d0d0f;
-}
-.text-pppp-s {
-    text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a;
-    color: #0d0d0f;
+
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+.text-shadow {
+    text-shadow: 0px 0px 10px oklch(0.555 0.163 48.998); 
 }
 
 .wheel-of-fortune {
@@ -47,3 +63,5 @@
 #toggle-spin:checked ~ div .spin-control {
     animation-play-state: paused;
 }
+
+
