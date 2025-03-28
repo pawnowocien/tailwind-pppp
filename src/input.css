@@ -1,51 +1,141 @@
 @import "./circles.css";
 @import "tailwindcss";
 
-@theme {
-    --color-twitter-blue: #1DA1F2;
 
+@theme {
+    --color-navy: #000406;
+    --color-dark-green: #060a06;
+    --color-dirty-red: #200a0a;
+    --color-neon-blue: rgb(0, 183, 255);
+
+    --color-weizen: #FFE696;
+    --color-pale-lager: #FFCC66;
+    --color-pilsner: #F0B450;
+    --color-ale: #DC783C;
+    --color-marzen: #C85A32;
+    --color-bock: #BE6428;
+    --color-porter: #3C2814;
+    --color-dark-lager: #1E140A;
+    --color-stout: #140A05;
+
+    --color-weizen-dark: #8f7c39;
+    --color-pale-lager-dark: #946217;
+    --color-pilsner-dark: #744a13;
+    --color-ale-dark: #6d361a;
+    --color-marzen-dark: #520e05;
+    --color-bock-dark: #632908;
+    --color-porter-dark: #141311;
+    --color-dark-lager-dark: #220f02;
+    --color-stout-dark: #0f0601;
 }
 
 @layer utilities {
-    .text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
-    .text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
-    .text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
-    @media (min-width: 40rem) {
-        .sm\:text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
-        .sm\:text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
-        .sm\:text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    .text-pppp-sm {
+        text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f;
+        @variant dark {
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px var(--color-neon-blue), 0 0 6px var(--color-neon-blue); 
+            color: white; 
+        }
     }
-    @media (min-width: 48rem) {
-        .md\:text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
-        .md\:text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
-        .md\:text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    .text-pppp-md {
+        text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f;
+        @variant md {
+            text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a;
+            color: #0d0d0f;
+        }
+        @variant dark {
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px var(--color-neon-blue), 0 0 6px var(--color-neon-blue); 
+            color: white; 
+            @variant md {
+                text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 5px var(--color-neon-blue), 0 0 8px var(--color-neon-blue); 
+                color: white;
+            }
+        }
     }
-    @media (min-width: 64rem) {
-        .lg\:text-pppp-sm { text-shadow: 1px -1px 0px #2b120e, 2px -2px 0px #aa3e24, 3px -3px 0px #fab43a; color: #0d0d0f; }
-        .lg\:text-pppp-md { text-shadow: 2px -2px 0px #2b120e, 4px -4px 0px #aa3e24, 6px -6px 0px #fab43a; color: #0d0d0f; }
-        .lg\:text-pppp-lg { text-shadow: 3px -3px 0px #2b120e, 6px -6px 0px #aa3e24, 9px -9px 0px #fab43a; color: #0d0d0f; }
+    .dark\:hover\:neon-sm {
+        @variant dark {
+            @variant hover {
+                text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px var(--color-neon-blue), 0 0 6px var(--color-neon-blue); 
+                color: white; 
+            }
+        }
     }
+    .dark\:neon-sm {
+        @variant dark {
+            text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px var(--color-neon-blue), 0 0 6px var(--color-neon-blue); 
+            color: white; 
+        }
+    }
+    .dark\:peer-checked\:neon-sm {
+        @variant dark {
+            @variant peer-checked {
+                text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px var(--color-neon-blue), 0 0 6px var(--color-neon-blue); 
+                color: white;
+            }
+        }
+    }
+    .dark\:text-hollow {
+        @variant dark {
+            text-shadow: 0 0 2px oklch(0.828 0.111 230.318), 0 0 2px oklch(0.828 0.111 230.318), 0 0 2px oklch(0.828 0.111 230.318);
+            color: black;
+        }
+    }
+    .dark\:peer-checked\:text-hollow {
+        @variant dark {
+            @variant peer-checked {
+                text-shadow: 0 0 2px oklch(0.828 0.111 230.318), 0 0 2px oklch(0.828 0.111 230.318), 0 0 2px oklch(0.828 0.111 230.318);
+                color: black;
+            }
+        }
+    }
+    .title-text-shadow {
+        text-shadow: 0px 0px 10px oklch(0.555 0.163 48.998);
+        @variant dark {
+            text-shadow: 0 0 5px #fff,
+                0 0 8px #fff,
+                0 0 18px #fff,
+                0 0 32px var(--color-neon-blue),
+                0 0 45px var(--color-neon-blue),
+                0 0 60px var(--color-neon-blue);
+
+            @variant md {
+                text-shadow: 0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px var(--color-neon-blue),
+                    0 0 82px var(--color-neon-blue),
+                    0 0 92px var(--color-neon-blue);
+            }
+        }
+    }
+    .wheel-of-fortune {
+        background: conic-gradient(from 90deg, 
+        var(--color-weizen) 0% 11.1%,
+        var(--color-pale-lager) 11.1% 22.2%,
+        var(--color-pilsner) 22.2% 33.3%,
+        var(--color-ale) 33.3% 44.4%,
+        var(--color-marzen) 44.4% 55.5%,
+        var(--color-bock) 55.5% 66.6%,
+        var(--color-porter) 66.6% 77.7%,
+        var(--color-dark-lager) 77.7% 88.8%,
+        var(--color-stout) 88.8% 100%);
+        
+        @variant dark {
+            background: conic-gradient(from 90deg, 
+            var(--color-weizen-dark) 0% 11.1%,
+            var(--color-pale-lager-dark) 11.1% 22.2%,
+            var(--color-pilsner-dark) 22.2% 33.3%,
+            var(--color-ale-dark) 33.3% 44.4%,
+            var(--color-marzen-dark) 44.4% 55.5%,
+            var(--color-bock-dark) 55.5% 66.6%,
+            var(--color-porter-dark) 66.6% 77.7%,
+            var(--color-dark-lager-dark) 77.7% 88.8%,
+            var(--color-stout-dark) 88.8% 100%);
+        }
+    }   
 }
 
-/* @custom-variant dark (&:where(.dark, .dark *)); */
-@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-.text-shadow {
-    text-shadow: 0px 0px 10px oklch(0.555 0.163 48.998); 
-}
-
-.wheel-of-fortune {
-    background: conic-gradient(from 90deg, 
-    #FFE696 0% 11.1%,
-    #FFCC66 11.1% 22.2%,
-    #F0B450 22.2% 33.3%,
-    #DC783C 33.3% 44.4%,
-    #C85A32 44.4% 55.5%,
-    #BE6428 55.5% 66.6%,
-    #3C2814 66.6% 77.7%,
-    #1E140A 77.7% 88.8%,
-    #140A05 88.8% 100%);
-}   
 
 @keyframes spin-fast {
     0% {

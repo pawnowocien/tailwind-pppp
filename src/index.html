@@ -6,10 +6,10 @@
   <link href="./output.css" rel="stylesheet">
   <title>PPPP</title>
 </head>
-<body class="bg-amber-500">
+<body class="bg-amber-500 dark:bg-black dark:text-sky-300 dark:text-">
 
   <!-- Background -->
-  <div class="area w-full h-screen fixed bg-gradient-to-l from-amber-400 to-amber-600">
+  <div class="area w-full h-screen fixed bg-gradient-to-l from-amber-400 to-amber-600 dark:from-black dark:to-black">
     <ul class="circles relative w-full h-full overflow-hidden">
       <li class="circle circle1"></li>
       <li class="circle circle2"></li>
@@ -27,87 +27,86 @@
 
   <!-- Sidebar -->
   <input type="checkbox" id="sidebar-toggle" class="peer hidden">
-  <label for="sidebar-toggle" class="select-none fixed top-4 left-4 z-30 p-2 bg-amber-600 text-white border-2 border-white rounded-md cursor-pointer peer-checked:bg-amber-800 peer-checked:border-amber-800 peer-checked:hover:bg-amber-700">☰</label>
-  <div class="fixed inset-y-0 left-0 w-64 bg-amber-800 text-white transform -translate-x-full peer-checked:translate-x-0 transition-transform p-4 flex flex-col items-center z-10">
-      <ul>
-          <li class="mb-2"><a href="#wstep" class="block p-2 hover:bg-amber-700 rounded">Wstęp</a></li>
-          <li class="mb-2"><a href="#przykazania" class="block p-2 hover:bg-amber-700 rounded">10 Przykazań</a></li>
-          <li class="mb-2"><a href="#cytaty" class="block p-2 hover:bg-amber-700 rounded">Cytaty</a></li>
-          <li class="mb-2"><a href="#wybory" class="block p-2 hover:bg-amber-700 rounded">Wyniki Wyborów</a></li>
-          <li class="mb-2"><a href="#czlonkowie" class="block p-2 hover:bg-amber-700 rounded">Członkowie PPPP</a></li>
-          <li class="mb-2"><a href="#kolo" class="block p-2 hover:bg-amber-700 rounded">Koło Fortuny</a></li>
+  <label for="sidebar-toggle" class="select-none fixed top-4 left-4 z-30 p-2 bg-amber-600 dark:bg-navy text-white dark:text-sky-300 dark:hover:neon-sm border-2 dark:border-1 border-white dark:border-sky-300 rounded-md cursor-pointer peer-checked:bg-amber-800 peer-checked:border-amber-800 peer-checked:hover:bg-amber-700 dark:peer-checked:bg-black dark:peer-checked:border-sky-300 dark:peer-checked:hover:bg-black">☰</label>
+  <div class="fixed inset-y-0 left-0 w-64 text-white bg-amber-800 dark:bg-black dark:border-sky-300 dark:border-r-2 dark:border-dashed transform -translate-x-full peer-checked:translate-x-0 transition-transform p-4 flex flex-col items-center z-10">
+      <ul class="dark:divide-y-1 dark:divide-sky-200">
+          <li class="mb-2"><a href="#wstep" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Wstęp</a></li>
+          <li class="mb-2"><a href="#przykazania" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">10 Przykazań</a></li>
+          <li class="mb-2"><a href="#cytaty" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Cytaty</a></li>
+          <li class="mb-2"><a href="#wybory" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Wyniki Wyborów</a></li>
+          <li class="mb-2"><a href="#czlonkowie" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Członkowie PPPP</a></li>
+          <li class="mb-2"><a href="#kolo" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Koło Fortuny</a></li>
       </ul>
   </div>
-
   
   <!-- Header -->
-  <header class=" bg-white w-full h-52 flex items-center justify-center text-4xl md:text-6xl font-bold uppercase text-white text-shadow">
-    <p class="text-wrap text-center">Polska Partia Przyjaciół Piwa</p>
+  <header class=" bg-white w-full flex items-center justify-center text-4xl md:text-6xl font-bold uppercase text-white title-text-shadow dark:bg-black dark:border-b-2 dark:border-sky-300">
+    <p class="text-wrap text-center my-15 leading-15 md:leading-20 test ">Polska Partia Przyjaciół Piwa</p>
   </header>
 
 
   <!-- Introduction -->
-  <section id="wstep" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl">
+  <section id="wstep" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
     <div class="flex flex-col md:flex-row justify-between mx-auto w-5/6 gap-8">
 
-      <div class="flex flex-col items-center w-full md:w-1/3 h-full min-h-92 shadow-xl bg-amber-900/30 rounded">
+      <div class="flex flex-col items-center w-full md:w-1/3 h-full min-h-92 shadow-xl dark:shadow-none bg-amber-900/30 rounded dark:bg-black dark:inset-ring-sky-300 dark:inset-ring-1 dark:text-sky-300">
         <a href="https://pl.wikipedia.org/wiki/Janusz_Rewi%C5%84ski" target="_blank" class="w-5/6 relative group block">
-          <img src="../images/rew-black-4-5.png" alt="Static Image" class="absolute inset-0 w-full h-full group-hover:opacity-0">
-          <img src="../images/rew-colored-4-5.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100">
+          <img src="../images/rew-black-4-5.png" alt="Static Image" class="absolute inset-0 w-full h-full group-hover:opacity-0 dark:opacity-0">
+          <img src="../images/rew-colored-4-5.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100 dark:opacity-100">
         </a>
-        <p class="text-center h-1/5 text-xl md:text-lg lg:text-lg xl:text-xl font-semibold p-1">Głowa głowy
-          <span class="font-bold text-pppp-s">PPPP</span>
+        <p class="text-center h-1/5 text-xl md:text-lg lg:text-lg xl:text-xl font-semibold dark:font-extralight p-1">Głowa głowy
+          <span class="font-bold dark:font-light text-pppp-sm">PPPP</span>
           w latach 1990-1992, założyciela partii,
-          <span class="font-bold">Janusza Rewińskiego</span>
+          <span class="font-bold dark:font-light dark:underline dark:underline-offset-4">Janusza Rewińskiego</span>
         </p>
       </div>
 
-      <div class="flex flex-col w-full md:w-2/3 h-max min-h-92 shadow-xl bg-white/30 rounded p-2">
-        <h1 class="my-2 text-xl lg:text-2xl xl:text-3xl font-bold text-center"><span class="text-pppp-sm lg:text-pppp-md">Polska Partia Przyjaciół Piwa</span> - że co?</h1>
-        <p class="p-2 text-sm lg:text-md xl:text-lg mx-4 text-justify">Polska Partia Przyjaciół Piwa (<span class="text-pppp-sm">PPPP</span>) to jedna z najważniejszych partii w historii Polski. Powstała na początku lat 90. jako żart – miała promować kulturę spokojnego picia piwa zamiast hałaśliwych knajp i wódczanych libacji. Ku zaskoczeniu wszystkich, w wyborach 1991 roku zdobyła aż 16 mandatów w Sejmie.</p>
-        <p class="p-2 text-sm lg:text-md xl:text-lg mx-4 text-justify">Po wejściu do polityki sprawy się trochę skomplikowały – partia podzieliła się na frakcje Małego i Dużego Piwa, a później zniknęła ze sceny. Mimo to PPPP do dziś jest symbolem geniuszu polskiej polityki i dowodem na to, że czasem najlepsze pomysły rodzą się przy kuflu.</p>
-        <p class="p-2 text-xs lg:text-sm xl:text-md text-black/80 text-right">Na podstawie <a href="https://pl.wikipedia.org/wiki/Polska_Partia_Przyjaci%C3%B3%C5%82_Piwa" target="_blank" class="text-sky-700/80 hover:underline">Wikipedii</a></p>
+      <div class="flex flex-col w-full md:w-2/3 h-max min-h-92 shadow-xl dark:shadow-none bg-white/30 rounded p-2 dark:bg-black dark:inset-ring-sky-300 dark:inset-ring-1 dark:text-sky-300">
+        <h1 class="my-2 text-xl lg:text-2xl xl:text-3xl font-bold dark:font-extralight text-center"><span class="text-pppp-md">Polska Partia Przyjaciół Piwa</span> - że co?</h1>
+        <p class="p-2 text-sm lg:text-md xl:text-lg mx-4 text-justify dark:font-extralight">Polska Partia Przyjaciół Piwa (<span class="text-pppp-sm">PPPP</span>) to jedna z najważniejszych partii w historii Polski. Powstała na początku lat 90. jako żart – miała promować kulturę spokojnego picia piwa zamiast hałaśliwych knajp i wódczanych libacji. Ku zaskoczeniu wszystkich, w wyborach 1991 roku zdobyła aż 16 mandatów w Sejmie.</p>
+        <p class="p-2 text-sm lg:text-md xl:text-lg mx-4 text-justify dark:font-extralight">Po wejściu do polityki sprawy się trochę skomplikowały – partia podzieliła się na frakcje Małego i Dużego Piwa, a później zniknęła ze sceny. Mimo to PPPP do dziś jest symbolem geniuszu polskiej polityki i dowodem na to, że czasem najlepsze pomysły rodzą się przy kuflu.</p>
+        <p class="p-2 text-xs lg:text-sm xl:text-md text-black/80 dark:text-sky-300/80 text-right dark:font-extralight">Na podstawie <a href="https://pl.wikipedia.org/wiki/Polska_Partia_Przyjaci%C3%B3%C5%82_Piwa" target="_blank" class="text-sky-700/80 dark:text-sky-200/80 hover:underline">Wikipedii</a></p>
       </div>
     </div>
   </section>
 
 
   <!-- Commandments -->
-  <section id="przykazania" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl space-y-2">
-    <h1 class="bg-white/30 text-xl md:text-3xl xl:text-4xl font-bold italic p-4 rounded-t-2xl">10 przykazań. Dekalog <span class="text-pppp-sm md:text-pppp-md">Polskiej Partii Przyjaciół Piwa</span> "Jak wypić to piwo?"</h1>
-    <ul class="bg-white/30 list-decimal p-4 list-inside space-y-4 rounded-b-3xl text-sm md:text-base">
-      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50">Uświadomić każdemu, że od zaraz możemy dużo lepiej.</li>
-      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50">Ustalić strategię gospodarczą na najbliższe 30 lat.</li>
-      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50">Stworzyć preferencje dla Produkcji i Usług kosztem importu i handlu.</li>
-      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50">Ustabilizować podatki i gospodarcze akty prawne.</li>
-      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50">Dziesięciokrotnie zwiększyć średni areał polskiego gospodarstwa rolnego.</li>
-      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50">Zrobić z budownictwa mieszkaniowego najbardziej intratny interes w Polsce.</li>
-      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50">Uświadomić, że bogacący się są szansą dla biednych.</li>
-      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50">Uznać, że edukacja młodego pokolenia i opieka nad emerytami wymaga poświęceń od każdego z nas.</li>
-      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50">Chronić środowisko, podporządkowując tej idei wszelką działalność, by nie stać się śmietnikiem Europy, a naszym dzieciom pozostawić czystą ZIEMIĘ.</li>
-      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50">Promować niskoprocentowe piwo zamiast wódki, czyste i gościnne kluby, puby i piwiarnie uczynić sympatycznym miejscem relaksujących spotkań.</li>
+  <section id="przykazania" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none space-y-2 dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
+    <h1 class="bg-white/30 text-xl md:text-3xl xl:text-4xl font-bold italic p-4 rounded-t-2xl dark:rounded-none dark:bg-transparent dark:text-hollow">10 przykazań. Dekalog <span class="text-pppp-md">Polskiej Partii Przyjaciół Piwa</span> "Jak wypić to piwo?"</h1>
+    <ul class="bg-white/30 list-decimal p-4 list-inside space-y-4 rounded-b-3xl text-sm md:text-base dark:border-t-1 dark:border-dotted dark:border-sky-300 dark:bg-transparent">
+      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Uświadomić każdemu, że od zaraz możemy dużo lepiej.</li>
+      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Ustalić strategię gospodarczą na najbliższe 30 lat.</li>
+      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Stworzyć preferencje dla Produkcji i Usług kosztem importu i handlu.</li>
+      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Ustabilizować podatki i gospodarcze akty prawne.</li>
+      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Dziesięciokrotnie zwiększyć średni areał polskiego gospodarstwa rolnego.</li>
+      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Zrobić z budownictwa mieszkaniowego najbardziej intratny interes w Polsce.</li>
+      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Uświadomić, że bogacący się są szansą dla biednych.</li>
+      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Uznać, że edukacja młodego pokolenia i opieka nad emerytami wymaga poświęceń od każdego z nas.</li>
+      <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Chronić środowisko, podporządkowując tej idei wszelką działalność, by nie stać się śmietnikiem Europy, a naszym dzieciom pozostawić czystą ZIEMIĘ.</li>
+      <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Promować niskoprocentowe piwo zamiast wódki, czyste i gościnne kluby, puby i piwiarnie uczynić sympatycznym miejscem relaksujących spotkań.</li>
     </ul>
-    <p class="p-2 text-right text-black/80 text-sm md:text-base ">
+    <p class="p-2 text-right text-black/80 text-sm md:text-base dark:text-sky-300/80">
       Na podstawie
-      <a href="https://repozytorium.amu.edu.pl/server/api/core/bitstreams/989415a9-4cad-4ec3-8219-a3ac2dadccb8/content" target="_blank" class="text-sky-700/80 hover:underline">Leksykonu polskich partii politycznych</a>
+      <a href="https://repozytorium.amu.edu.pl/server/api/core/bitstreams/989415a9-4cad-4ec3-8219-a3ac2dadccb8/content" target="_blank" class="text-sky-700/80 dark:text-sky-200/80  hover:underline">Leksykonu polskich partii politycznych</a>
       pozyskanego z
-      <a href="https://www.reddit.com/r/PolskaPolityka/comments/1b4sxh9/przegl%C4%85d_partii_polska_partia_przyjaci%C3%B3%C5%82_piwa/" target="_blank" class="text-sky-700/80 hover:underline">tego posta</a>
+      <a href="https://www.reddit.com/r/PolskaPolityka/comments/1b4sxh9/przegl%C4%85d_partii_polska_partia_przyjaci%C3%B3%C5%82_piwa/" target="_blank" class="text-sky-700/80 dark:text-sky-200/80  hover:underline">tego posta</a>
     </p>
   </section>
 
 
   <!-- Quotes -->
-  <section id="cytaty" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl">
-    <h1 class="text-xl md:text-3xl xl:text-4xl font-bold text-center">Ważne cytaty</h1>    
-    <div class="bg-white/30 w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8 text-sm md:text-base shadow-xl rounded-2xl text-justify flex flex-col">
+  <section id="cytaty" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
+    <h1 class="text-xl md:text-3xl xl:text-4xl font-bold text-center dark:text-hollow">Ważne cytaty</h1>    
+    <div class="bg-white/30 w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8 text-sm md:text-base shadow-xl dark:shadow-none rounded-2xl text-justify flex flex-col dark:bg-transparent dark:hover:bg-black dark:rounded-none dark:border-1 dark:border-dotted dark:border-transparent dark:hover:border-sky-300">
       <p class="">Nie mamy złudzeń, że Polak stanie się abstynentem. Tylko niech nie pije wódki. Smaczne, chłodne, aromatyczne piwo tak samo może służyć do wznoszenia toastów (...) Przy piwie można wymienić poglądy, przy piwie łatwiej dojść do porozumienia, dogadać się. Dogadujmy się, bądźmy tolerancyjni, wyrozumiali i spolegliwi.</p>
       <p class="text-right font-semibold">Janusz Rewiński</p>
     </div>
-    <div class="bg-white/30 w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8 text-sm md:text-base shadow-xl rounded-2xl text-justify flex flex-col">
+    <div class="bg-white/30 w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8 text-sm md:text-base shadow-xl dark:shadow-none rounded-2xl text-justify flex flex-col dark:bg-transparent dark:hover:bg-black dark:rounded-none dark:border-1 dark:border-dotted dark:border-transparent dark:hover:border-sky-300">
       <p class="">Panie Marszałku! Panie i Panowie Posłowie! Bardzo przepraszam, że drugi raz dzisiaj zabieram głos, że to taka seria, ale są kwestie tzw. płynne, czyli dotyczące w dużym stopniu programu Polskiej Partii Przyjaciół Piwa.</p>
       <p class="text-right font-semibold">Janusz Rewiński</p>
     </div>
-    <div class="bg-white/30 w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8 text-sm md:text-base shadow-xl rounded-2xl text-justify flex flex-col">
+    <div class="bg-white/30 w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8 text-sm md:text-base shadow-xl dark:shadow-none rounded-2xl text-justify flex flex-col dark:bg-transparent dark:hover:bg-black dark:rounded-none dark:border-1 dark:border-dotted dark:border-transparent dark:hover:border-sky-300">
       <p class="">Piwo nie jest ani ciemne, ani jasne, jest po prostu smaczne.</p>
       <p class="text-right font-semibold">Janusz Rewiński</p>
     </div>
@@ -115,9 +114,9 @@
 
 
   <!-- Election results -->
-  <section id="wybory" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl space-y-8">
-    <h1 class="md:text-3xl xl:text-4xl font-bold text-center">Wyniki wyborów do Sejmu RP 1991</h1>
-    <table class="bg-white/30 rounded-2xl table-auto  text-sm md:text-base w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8">
+  <section id="wybory" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none space-y-8 dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
+    <h1 class="md:text-3xl xl:text-4xl font-bold text-center dark:text-hollow">Wyniki wyborów do Sejmu RP 1991</h1>
+    <table class="bg-white/30 dark:bg-transparent rounded-2xl table-auto text-sm md:text-base w-full sm:w-5/6 lg:w-2/3 mx-auto my-8 p-8">
       <thead>
         <tr>
           <th class="px-2 py-3">Partia</th>
@@ -126,119 +125,119 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">UD</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-1232/10000 h-full bg-indigo-800 border-r-2"></div>
+              <div class="w-1232/10000 h-full bg-indigo-800 dark:bg-indigo-950 border-r-2"></div>
               <span class="pr-4">12,32</span>
             </div>
           </td>
-          <td class="px-2 py-3">62</td>
+          <td class="px-2 py-3 text-right">62</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">SLD</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-1199/10000 h-full bg-red-500 border-r-2"></div>
+              <div class="w-1199/10000 h-full bg-red-500 dark:bg-red-950 border-r-2"></div>
               <span class="pr-4">11,99</span>
             </div>
           </td>
-          <td class="px-2 py-3">60</td>
+          <td class="px-2 py-3 text-right">60</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">WAK</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-874/10000 h-full bg-blue-500 border-r-2"></div>
+              <div class="w-874/10000 h-full bg-blue-500 dark:bg-blue-950 border-r-2"></div>
               <span class="pr-4">8,74</span>
             </div>
           </td>
-          <td class="px-2 py-3">49</td>
+          <td class="px-2 py-3 text-right">49</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">PSL</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-867/10000 h-full bg-green-500 border-r-2"></div>
+              <div class="w-867/10000 h-full bg-green-500 dark:bg-green-950 border-r-2"></div>
               <span class="pr-4">8,67</span>
             </div>
           </td>
-          <td class="px-2 py-3">48</td>
+          <td class="px-2 py-3 text-right">48</td>
         </tr>
         
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">KPN</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-750/10000 h-full bg-amber-900 border-r-2"></div>
+              <div class="w-750/10000 h-full bg-amber-900 dark:bg-amber-950 border-r-2"></div>
               <span class="pr-4">7,50</span>
             </div>
           </td>
-          <td class="px-2 py-3">46</td>
+          <td class="px-2 py-3 text-right">46</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">POC</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-871/10000 h-full bg-yellow-300 border-r-2"></div>
+              <div class="w-871/10000 h-full bg-yellow-300 dark:bg-yellow-800 border-r-2"></div>
               <span class="pr-4">8,71</span>
             </div>
           </td>
-          <td class="px-2 py-3">44</td>
+          <td class="px-2 py-3 text-right">44</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">KLD</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-749/10000 h-full bg-cyan-700 border-r-2"></div>
+              <div class="w-749/10000 h-full bg-cyan-700 dark:bg-cyan-950 border-r-2"></div>
               <span class="pr-4">7,49</span>
             </div>
           </td>
-          <td class="px-2 py-3">37</td>
+          <td class="px-2 py-3 text-right">37</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">PSL-PL</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-547/10000 h-full bg-green-300 border-r-2"></div>
+              <div class="w-547/10000 h-full bg-green-300 dark:bg-lime-900 border-r-2"></div>
               <span class="pr-4">5,47</span>
             </div>
           </td>
-          <td class="px-2 py-3">28</td>
+          <td class="px-2 py-3 text-right">28</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">NSZZ</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-505/10000 h-full bg-red-400 border-r-2"></div>
+              <div class="w-505/10000 h-full bg-red-400 dark:bg-pink-900 border-r-2"></div>
               <span class="pr-4">5,05</span>
             </div>
           </td>
-          <td class="px-2 py-3">27</td>
+          <td class="px-2 py-3 text-right">27</td>
         </tr>
-        <tr class="group hover:bg-amber-800/10">
+        <tr class="group hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3 text-pppp-sm">PPPP</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-327/10000 h-full bg-amber-500 border-r-2"></div>
+              <div class="w-327/10000 h-full bg-amber-500 dark:bg-amber-800 border-r-2"></div>
               <span class="pr-4 text-nowrap">
-                <span class="text-transparent group-hover:text-black text-[6px] md:text-sm">ZA MAŁO</span>
+                <span class="text-transparent group-hover:text-black text-[6px] md:text-sm dark:group-hover:text-sky-300 dark:font-extralight">ZA MAŁO</span>
                 <span>3,27</span>
               </span>
             </div>
           </td>
-          <td class="px-2 py-3">16</td>
+          <td class="px-2 py-3 text-right">16</td>
         </tr>
-        <tr class="hover:bg-amber-800/10">
+        <tr class="hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
           <td class="px-2 py-3">Partie gorsze</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
-              <div class="w-1287/10000 h-full bg-gray-400 border-r-2"></div>
+              <div class="w-1287/10000 h-full bg-gray-400 dark:bg-gray-800 border-r-2"></div>
               <span class="pr-4">12,87</span>
             </div>
           </td>
-          <td class="px-2 py-3">43</td>
+          <td class="px-2 py-3 text-right">43</td>
         </tr>
       </tbody>
     </table>
@@ -246,38 +245,38 @@
 
 
   <!-- Party members -->
-  <section id="czlonkowie" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl space-y-8">
-    <h1 class="text-xl md:text-3xl xl:text-4xl font-bold text-center">Członkowie PPPP</h1>
+  <section id="czlonkowie" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none space-y-8 dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
+    <h1 class="text-xl md:text-3xl xl:text-4xl font-bold text-center dark:text-hollow">Członkowie PPPP</h1>
     <div class="w-full xl:w-4/5 flex flex-col xl:flex-row items-center mx-auto justify-evenly gap-4">
-      <div class="w-full xl:w-2/3 bg-white/30 border-2 rounded-2xl flex flex-wrap gap-4 p-4 justify-center text-[10px] md:text-xs">
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-400 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-500 hover:font-bold transition"><p>Adam<br>Halber</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-400 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-500 hover:font-bold transition"><p>Krzysztof<br>Ibisz</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-400 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-500 hover:font-bold transition"><p>Adam<br>Piechowicz</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Tomasz<br>Bańkowski</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Tomasz<br>Brach</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Leszek<br>Bubel</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Sławomir<br>Chabiński</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Andrzej<br>Czernecki</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Jerzy<br>Dziewulski</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Zbigniew<br>Eysmont</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Tomasz<br>Holc</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Marek<br>Kłoczko</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-bold     bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-extrabold transition"><p>Janusz<br>Rewiński</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Cezary<br>Urbaniak</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Jan<br>Zylber</p></div>
-        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold transition"><p>Andrzej<br>Zakrzewski</p></div>
+      <div class="w-full xl:w-2/3 bg-white/30 dark:bg-black border-2 dark:border-1 rounded-2xl dark:rounded-sm flex flex-wrap gap-4 p-4 justify-center text-[10px] md:text-xs">
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-400 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-500 hover:font-bold      transition dark:bg-dark-green dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dark-green"><p>Adam<br>Halber</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-400 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-500 hover:font-bold      transition dark:bg-dark-green dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dark-green"><p>Krzysztof<br>Ibisz</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-400 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-500 hover:font-bold      transition dark:bg-dark-green dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dark-green"><p>Adam<br>Piechowicz</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Tomasz<br>Bańkowski</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Tomasz<br>Brach</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Leszek<br>Bubel</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Sławomir<br>Chabiński</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Andrzej<br>Czernecki</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Jerzy<br>Dziewulski</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Zbigniew<br>Eysmont</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Tomasz<br>Holc</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Marek<br>Kłoczko</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-bold     bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-extrabold transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-normal dark:neon-sm      dark:hover:border-solid dark:hover:bg-dirty-red "><p>Janusz<br>Rewiński</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Cezary<br>Urbaniak</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Jan<br>Zylber</p></div>
+        <div class="h-16 md:h-20 aspect-square max-w-20 font-semibold bg-amber-600 border-3 rounded-2xl flex items-center text-center justify-center break-after-all hover:bg-amber-700 hover:font-bold      transition dark:bg-dirty-red  dark:font-light dark:border-sky-200 dark:border-2 dark:border-dotted dark:hover:font-light dark:hover:neon-sm dark:hover:border-solid dark:hover:bg-dirty-red "><p>Andrzej<br>Zakrzewski</p></div>
       </div>
-      <div class="text-sm md:text-base text-amber-950 font-semibold h-auto xl:w-1/5 bg-white/30 flex flex-col gap-2 p-4 rounded-2xl">
-        <div class="text-lg md:text-xl xl:text-2xl font-bold">
+      <div class="text-sm md:text-base text-amber-950 dark:text-sky-300 font-semibold h-auto xl:w-1/5 bg-white/30 dark:bg-black flex flex-col gap-2 p-4 rounded-2xl dark:inset-ring-1 dark:rounded-sm">
+        <div class="text-lg md:text-xl xl:text-2xl font-bold dark:text-hollow">
           Frakcje partyjne
         </div>
-        <div class="flex flex-row xl:flex-col gap-2">
+        <div class="flex flex-row xl:flex-col gap-2 dark:font-light">
           <div class="h-14 w-full flex flex-row items-center gap-2">
-            <div class="mx-2 rounded-full bg-amber-400 h-10 aspect-square border-2 border-amber-950"></div>
+            <div class="mx-2 rounded-full bg-amber-400 dark:bg-dark-green h-10 aspect-square border-2 border-amber-950 dark:border-sky-200 dark:border-dotted"></div>
             <div>Małe piwo</div>
           </div>
           <div class="h-14 w-full flex flex-row items-center gap-2">
-            <div class="mx-2 rounded-full bg-amber-600 min-h-10 min-w-10 h-10 w-10 border-2 border-amber-950"></div>
+            <div class="mx-2 rounded-full bg-amber-600 dark:bg-dirty-red h-10 aspect-square border-2 border-amber-950 dark:border-sky-200 dark:border-dotted"></div>
             <div>Duże piwo</div>
           </div>
 
@@ -288,8 +287,8 @@
 
   
   <!-- Spinning wheel -->
-  <section id="kolo" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl text-center items-center">
-    <h1 class="text-xl md:text-3xl xl:text-4xl font-bold text-center">Koło Fortuny</h1>
+  <section id="kolo" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none text-center items-center dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
+    <h1 class="text-xl md:text-3xl xl:text-4xl font-bold text-center dark:text-hollow">Koło Fortuny</h1>
     <div class="flex flex-col md:flex-row items-center justify-evenly my-8">
 
 
@@ -300,52 +299,52 @@
           <div class="w-3/4 aspect-square rounded-full wheel-of-fortune spin-control border-2"></div>
           <div class="w-1/4 h-6/7 items-center flex">
             <div class="relative w-full aspect-square">
-              <div class="absolute bg-red-500 w-full h-full" style="clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0% 50%);"></div>
-              <div class="absolute bg-red-800 w-full h-full" style="clip-path: polygon(75% 50%, 0 50%, 100% 100%);"></div>
+              <div class="absolute bg-red-500 dark:bg-red-900 w-full h-full" style="clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0% 50%);"></div>
+              <div class="absolute bg-red-800 dark:bg-red-950  w-full h-full" style="clip-path: polygon(75% 50%, 0 50%, 100% 100%);"></div>
             </div>
           </div>
         </div>
 
-        <span class="flex items-center justify-center text-xs md:text-md lg:text-lg h-1/8 aspect-2/1 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 absolute bottom-0 right-5/8 border-6 sm:border-10 lg:border-12 border-r-0 border-amber-100">OFF</span>
-        <span class="flex items-center justify-center text-xs md:text-md lg:text-lg h-1/8 aspect-2/1 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 absolute bottom-0 left-3/8  border-6 sm:border-10 lg:border-12 border-l-0 border-amber-100">ON</span>
+        <span class="flex items-center justify-center text-xs md:text-md lg:text-lg h-1/8 aspect-2/1 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 dark:font-semibold dark:bg-black dark:peer-checked:bg-black dark:text-hollow dark:peer-checked:neon-sm absolute bottom-0 right-5/8 border-6 sm:border-10 lg:border-12 border-r-0 border-amber-100 dark:border-1 dark:border-neon-blue">OFF</span>
+        <span class="flex items-center justify-center text-xs md:text-md lg:text-lg h-1/8 aspect-2/1 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 dark:font-semibold dark:bg-black dark:peer-checked:bg-black dark:neon-sm dark:peer-checked:text-hollow absolute bottom-0 left-3/8  border-6 sm:border-10 lg:border-12 border-l-0 border-amber-100 dark:border-1 dark:border-neon-blue">ON</span>
         <label for="toggle-spin" class="border-6 sm:border-10 lg:border-12 border-transparent h-1/8 aspect-4/1 inline-flex items-center p-2 rounded-md cursor-pointer absolute bottom-0 right-13/32"></label>
       </div>
 
       <ul class="w-full md:w-1/5 flex flex-wrap md:flex-col text-sm md:text-base lg:text-lg gap-3 items-center justify-center text-left">
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#FFE696] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-weizen dark:bg-weizen-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Pszeniczne</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#FFCC66] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-pale-lager dark:bg-pale-lager-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Jasny lager</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#F0B450] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-pilsner dark:bg-pilsner-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Pilzner</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#DC783C] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-ale dark:bg-ale-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Ale</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#C85A32] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-marzen dark:bg-marzen-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Marcowe</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#BE6428] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-bock dark:bg-bock-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Koźlak</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#3C2814] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-porter dark:bg-porter-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Porter</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#1E140A] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-dark-lager dark:bg-dark-lager-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Ciemny lager</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl bg-[#140A05] h-8 md:h-10 aspect-square border-2 border-amber-950"></div>
+          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-stout dark:bg-stout-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Stout</div>
         </li>
       </ul>
@@ -354,9 +353,9 @@
 
   <!-- Footer -->
   <footer class="bg-transparent w-full flex flex-row items-center justify-center text-xs sm:text-sm md:text-md lg:text-lg align-middle gap-2">
-    <div class="h-12 sm:h-auto flex-auto rounded-tr-2xl bg-amber-950 p-2 text-right"><a href=https://github.com/pawnowocien/tailwind-pppp class="text-sky-300/80 hover:underline">Repozytorium strony</a></div>
-    <div class="h-12 sm:h-auto flex-none rounded-t-2xl  bg-amber-800 p-2 text-center">Autor strony: <span class="font-semibold">Paweł Nowocień</span></div>
-    <div class="h-12 sm:h-auto flex-auto rounded-tl-2xl bg-amber-600 p-2 text-left"><a href=https://pawnowocien.github.io/uni_projects.html class="text-sky-200/80 hover:underline">Pozostałe projekty AWWW</a></div>
+    <div class="h-12 sm:h-auto flex-auto rounded-tr-2xl bg-amber-950 dark:bg-black dark:border-t-1 dark:border-r-1 p-2 text-right"><a href=https://github.com/pawnowocien/tailwind-pppp class="text-sky-300/80 dark:text-sky-200/80 hover:underline">Repozytorium strony</a></div>
+    <div class="h-12 sm:h-auto flex-none rounded-t-2xl  bg-amber-800 dark:bg-black dark:border-1 dark:border-b-0   p-2 text-center">Autor strony: <span class="font-semibold dark:font-normal dark:neon-sm">Paweł Nowocień</span></div>
+    <div class="h-12 sm:h-auto flex-auto rounded-tl-2xl bg-amber-600 dark:bg-black dark:border-t-1 dark:border-l-1 p-2 text-left"><a href=https://pawnowocien.github.io/uni_projects.html class="text-sky-200/80  hover:underline">Pozostałe projekty AWWW</a></div>
   </footer>  
 </body>
 </html>
