@@ -25,18 +25,34 @@
   </div>
 
 
+
   <!-- Sidebar -->
   <input type="checkbox" id="sidebar-toggle" class="peer hidden">
   <label for="sidebar-toggle" class="select-none fixed top-4 left-4 z-30 p-2 bg-amber-600 dark:bg-navy text-white dark:text-sky-300 dark:hover:neon-sm border-2 dark:border-1 border-white dark:border-sky-300 rounded-md cursor-pointer peer-checked:bg-amber-800 peer-checked:border-amber-800 peer-checked:hover:bg-amber-700 dark:peer-checked:bg-black dark:peer-checked:border-sky-300 dark:peer-checked:hover:bg-black">☰</label>
-  <div class="fixed inset-y-0 left-0 w-64 text-white bg-amber-800 dark:bg-black dark:border-sky-300 dark:border-r-2 dark:border-dashed transform -translate-x-full peer-checked:translate-x-0 transition-transform p-4 flex flex-col items-center z-10">
-      <ul class="dark:divide-y-1 dark:divide-sky-200">
-          <li class="mb-2"><a href="#wstep" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Wstęp</a></li>
+  <div class="fixed inset-y-0 left-0 text-white bg-amber-800 dark:bg-black dark:border-sky-300 dark:border-r-2 dark:border-dashed transform -translate-x-full peer-checked:translate-x-0 transition-transform p-4 flex flex-col items-center z-10">
+      <ul class="mt-12 md:mt-0 md:mx-12 dark:divide-y-1 dark:divide-sky-200 text-xs md:text-sm lg:text-lg">
+          <li class="mb-2"><a href="#wstep"       class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Wstęp</a></li>
           <li class="mb-2"><a href="#przykazania" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">10 Przykazań</a></li>
-          <li class="mb-2"><a href="#cytaty" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Cytaty</a></li>
-          <li class="mb-2"><a href="#wybory" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Wyniki Wyborów</a></li>
-          <li class="mb-2"><a href="#czlonkowie" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Członkowie PPPP</a></li>
-          <li class="mb-2"><a href="#kolo" class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Koło Fortuny</a></li>
+          <li class="mb-2"><a href="#cytaty"      class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Cytaty</a></li>
+          <li class="mb-2"><a href="#wybory"      class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Wyniki Wyborów</a></li>
+          <li class="mb-2"><a href="#czlonkowie"  class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Członkowie PPPP</a></li>
+          <li class="mb-2"><a href="#kolo"        class="block p-2 hover:bg-amber-700 dark:hover:bg-black dark:hover:neon-sm rounded">Koło Fortuny</a></li>
       </ul>
+      <div class="bg-amber-900 dark:bg-black p-2 md:p-4 gap-y-2 rounded-2xl w-25 md:w-auto">
+        <p class="text-center text-sm md:text-base lg:text-lg">Motywy</p>
+        <ul class="gap-2 text text-xs md:text-sm lg:text-base">
+          <li class="p-2 w-full flex flex-row items-center gap-2">
+            <div class="w-6 md:w-8 lg:w-10 aspect-square rounded-full bg-gradient-to-bl from-amber-300 to-amber-700 border-1 md:border-2 border-amber-950 text-pppp-sm flex items-center text-center justify-center"><p>Aa</p></div>
+            <p>Light mode</p>
+            <span class="text-xs md:text-sm lg:text-base dark:text-[0px] font-bold">(!)</span>
+          </li>
+          <li class="p-2 w-full flex flex-row items-center gap-2">
+            <div class="w-6 md:w-8 lg:w-10 aspect-square rounded-full bg-gradient-to-bl from-navy to-black border-1 md:border-2 border-sky-300 neon-sm flex items-center text-center justify-center"><p>Aa</p></div>
+            <p>Dark mode</p>
+            <span class="text-[0px] dark:text-xs dark:md:text-sm dark:lg:text-base dark:neon-sm">(!)</span>
+          </li>
+        </ul>
+      </div>
   </div>
   
   <!-- Header -->
@@ -55,17 +71,17 @@
           <img src="../images/rew-colored-4-5.gif" alt="GIF" class="w-full h-full opacity-0 group-hover:opacity-100 dark:opacity-100">
         </a>
         <p class="text-center h-1/5 text-xl md:text-lg lg:text-lg xl:text-xl font-semibold dark:font-extralight p-1">Głowa głowy
-          <span class="font-bold dark:font-light text-pppp-sm">PPPP</span>
+          <span class="font-bold dark:font-light text-special-sm">PPPP</span>
           w latach 1990-1992, założyciela partii,
           <span class="font-bold dark:font-light dark:underline dark:underline-offset-4">Janusza Rewińskiego</span>
         </p>
       </div>
 
       <div class="flex flex-col w-full md:w-2/3 h-max min-h-92 shadow-xl dark:shadow-none bg-white/30 rounded p-2 dark:bg-black dark:inset-ring-sky-300 dark:inset-ring-1 dark:text-sky-300">
-        <h1 class="my-2 text-xl lg:text-2xl xl:text-3xl font-bold dark:font-extralight text-center"><span class="text-pppp-md">Polska Partia Przyjaciół Piwa</span> - że co?</h1>
-        <p class="p-2 text-sm lg:text-md xl:text-lg mx-4 text-justify dark:font-extralight">Polska Partia Przyjaciół Piwa (<span class="text-pppp-sm">PPPP</span>) to jedna z najważniejszych partii w historii Polski. Powstała na początku lat 90. jako żart – miała promować kulturę spokojnego picia piwa zamiast hałaśliwych knajp i wódczanych libacji. Ku zaskoczeniu wszystkich, w wyborach 1991 roku zdobyła aż 16 mandatów w Sejmie.</p>
-        <p class="p-2 text-sm lg:text-md xl:text-lg mx-4 text-justify dark:font-extralight">Po wejściu do polityki sprawy się trochę skomplikowały – partia podzieliła się na frakcje Małego i Dużego Piwa, a później zniknęła ze sceny. Mimo to PPPP do dziś jest symbolem geniuszu polskiej polityki i dowodem na to, że czasem najlepsze pomysły rodzą się przy kuflu.</p>
-        <p class="p-2 text-xs lg:text-sm xl:text-md text-black/80 dark:text-sky-300/80 text-right dark:font-extralight">Na podstawie <a href="https://pl.wikipedia.org/wiki/Polska_Partia_Przyjaci%C3%B3%C5%82_Piwa" target="_blank" class="text-sky-700/80 dark:text-sky-200/80 hover:underline">Wikipedii</a></p>
+        <h1 class="my-2 text-xl lg:text-2xl xl:text-3xl font-bold dark:font-extralight text-center"><span class="text-special-md">Polska Partia Przyjaciół Piwa</span> - że co?</h1>
+        <p class="p-2 text-sm lg:text-base xl:text-lg mx-4 text-justify dark:font-extralight">Polska Partia Przyjaciół Piwa (<span class="text-special-sm">PPPP</span>) to jedna z najważniejszych partii w historii Polski. Powstała na początku lat 90. jako żart – miała promować kulturę spokojnego picia piwa zamiast hałaśliwych knajp i wódczanych libacji. Ku zaskoczeniu wszystkich, w wyborach 1991 roku zdobyła aż 16 mandatów w Sejmie.</p>
+        <p class="p-2 text-sm lg:text-base xl:text-lg mx-4 text-justify dark:font-extralight">Po wejściu do polityki sprawy się trochę skomplikowały – partia podzieliła się na frakcje Małego i Dużego Piwa, a później zniknęła ze sceny. Mimo to PPPP do dziś jest symbolem geniuszu polskiej polityki i dowodem na to, że czasem najlepsze pomysły rodzą się przy kuflu.</p>
+        <p class="p-2 text-xs lg:text-sm xl:text-base text-black/80 dark:text-sky-300/80 text-right dark:font-extralight">Na podstawie <a href="https://pl.wikipedia.org/wiki/Polska_Partia_Przyjaci%C3%B3%C5%82_Piwa" target="_blank" class="text-sky-700/80 dark:text-sky-200/80 hover:underline">Wikipedii</a></p>
       </div>
     </div>
   </section>
@@ -73,7 +89,7 @@
 
   <!-- Commandments -->
   <section id="przykazania" class="bg-white/30 w-5/6 sm:w-3/4 mx-auto my-8 p-8 shadow-xl dark:shadow-none space-y-2 dark:bg-navy dark:inset-ring-sky-300 dark:inset-ring-2">
-    <h1 class="bg-white/30 text-xl md:text-3xl xl:text-4xl font-bold italic p-4 rounded-t-2xl dark:rounded-none dark:bg-transparent dark:text-hollow">10 przykazań. Dekalog <span class="text-pppp-md">Polskiej Partii Przyjaciół Piwa</span> "Jak wypić to piwo?"</h1>
+    <h1 class="bg-white/30 text-xl md:text-3xl xl:text-4xl font-bold italic p-4 rounded-t-2xl dark:rounded-none dark:bg-transparent dark:text-hollow">10 przykazań. Dekalog <span class="text-special-md">Polskiej Partii Przyjaciół Piwa</span> "Jak wypić to piwo?"</h1>
     <ul class="bg-white/30 list-decimal p-4 list-inside space-y-4 rounded-b-3xl text-sm md:text-base dark:border-t-1 dark:border-dotted dark:border-sky-300 dark:bg-transparent">
       <li class="bg-amber-100/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-300/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Uświadomić każdemu, że od zaraz możemy dużo lepiej.</li>
       <li class="bg-amber-200/30 p-2 rounded border-2 border-amber-950 hover:bg-amber-400/50 dark:bg-transparent dark:hover:bg-transparent dark:hover:border-sky-200 dark:border-sky-300 dark:hover:neon-sm">Ustalić strategię gospodarczą na najbliższe 30 lat.</li>
@@ -217,7 +233,7 @@
           <td class="px-2 py-3 text-right">27</td>
         </tr>
         <tr class="group hover:bg-amber-800/10 dark:hover:bg-black dark:inset-ring-sky-300 dark:hover:inset-ring-1">
-          <td class="px-2 py-3 text-pppp-sm">PPPP</td>
+          <td class="px-2 py-3 text-special-sm">PPPP</td>
           <td class="px-2 py-3">
             <div class="w-full h-6 border-2 flex items-center justify-between">
               <div class="w-327/10000 h-full bg-amber-500 dark:bg-amber-800 border-r-2"></div>
@@ -305,8 +321,8 @@
           </div>
         </div>
 
-        <span class="flex items-center justify-center text-xs md:text-md lg:text-lg h-1/8 aspect-2/1 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 dark:font-semibold dark:bg-black dark:peer-checked:bg-black dark:text-hollow dark:peer-checked:neon-sm absolute bottom-0 right-5/8 border-6 sm:border-10 lg:border-12 border-r-0 border-amber-100 dark:border-1 dark:border-neon-blue">OFF</span>
-        <span class="flex items-center justify-center text-xs md:text-md lg:text-lg h-1/8 aspect-2/1 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 dark:font-semibold dark:bg-black dark:peer-checked:bg-black dark:neon-sm dark:peer-checked:text-hollow absolute bottom-0 left-3/8  border-6 sm:border-10 lg:border-12 border-l-0 border-amber-100 dark:border-1 dark:border-neon-blue">ON</span>
+        <span class="flex items-center justify-center text-xs md:text-base lg:text-lg h-1/8 aspect-2/1 rounded-l-md bg-amber-100 peer-checked:bg-amber-300 dark:font-semibold dark:bg-black dark:peer-checked:bg-black dark:text-hollow dark:peer-checked:neon-sm absolute bottom-0 right-5/8 border-6 sm:border-10 lg:border-12 border-r-0 border-amber-100 dark:border-1 dark:border-neon-blue">OFF</span>
+        <span class="flex items-center justify-center text-xs md:text-base lg:text-lg h-1/8 aspect-2/1 rounded-r-md bg-amber-400 peer-checked:bg-amber-100 dark:font-semibold dark:bg-black dark:peer-checked:bg-black dark:neon-sm dark:peer-checked:text-hollow absolute bottom-0 left-3/8  border-6 sm:border-10 lg:border-12 border-l-0 border-amber-100 dark:border-1 dark:border-neon-blue">ON</span>
         <label for="toggle-spin" class="border-6 sm:border-10 lg:border-12 border-transparent h-1/8 aspect-4/1 inline-flex items-center p-2 rounded-md cursor-pointer absolute bottom-0 right-13/32"></label>
       </div>
 
@@ -352,7 +368,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-transparent w-full flex flex-row items-center justify-center text-xs sm:text-sm md:text-md lg:text-lg align-middle gap-2">
+  <footer class="bg-transparent w-full flex flex-row items-center justify-center text-xs sm:text-sm md:text-base lg:text-lg align-middle gap-2">
     <div class="h-12 sm:h-auto flex-auto rounded-tr-2xl bg-amber-950 dark:bg-black dark:border-t-1 dark:border-r-1 p-2 text-right"><a href=https://github.com/pawnowocien/tailwind-pppp class="text-sky-300/80 dark:text-sky-200/80 hover:underline">Repozytorium strony</a></div>
     <div class="h-12 sm:h-auto flex-none rounded-t-2xl  bg-amber-800 dark:bg-black dark:border-1 dark:border-b-0   p-2 text-center">Autor strony: <span class="font-semibold dark:font-normal dark:neon-sm">Paweł Nowocień</span></div>
     <div class="h-12 sm:h-auto flex-auto rounded-tl-2xl bg-amber-600 dark:bg-black dark:border-t-1 dark:border-l-1 p-2 text-left"><a href=https://pawnowocien.github.io/uni_projects.html class="text-sky-200/80  hover:underline">Pozostałe projekty AWWW</a></div>
