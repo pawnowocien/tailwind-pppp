@@ -10,7 +10,7 @@
 
   <!-- Background -->
   <div class="area w-full h-screen fixed bg-gradient-to-l from-amber-400 to-amber-600 dark:from-black dark:to-black">
-    <ul class="circles relative w-full h-full overflow-hidden">
+    <ul class="circles relative w-full h-full overflow-hidden dark:hidden">
       <li class="circle circle1"></li>
       <li class="circle circle2"></li>
       <li class="circle circle3"></li>
@@ -258,9 +258,20 @@
       </tbody>
     </table>
 
+    
+    <input checked type="checkbox" id="toggle-interactive" class="peer hidden">
 
-    <div class="w-full lg:w-2/3 text-xs md:text-sm lg:text-base font-normal sm:font-bold h-35 bg-transparent rounded-2xl mx-auto relative">
+    <label for="toggle-interactive" class="relative group inline-block left-0 sm:left-1/12 lg:left-1/6 text-white dark:text-sky-300">
+      <div class="relative flex items-center justify-center">
+        <span class="absolute w-10 h-10 rounded-full bg-amber-600/30 dark:bg-sky-300/20 animate-ping"></span>
+        <div class="select-none relative bg-amber-600 dark:bg-black w-8 aspect-square rounded-full border-2 text-xl flex items-center justify-center">i</div>
+      </div>
+      <div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-30 sm:w-44 p-2 text-xs bg-amber-600 dark:bg-black border-white dark:border-sky-300 border-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+        Kliknij, aby odkryć interaktywną porównywarkę
+      </div>
+    </label>
 
+    <div class="peer-checked:hidden w-full lg:w-2/3 text-xs md:text-sm lg:text-base font-bold h-45 md:h-35 bg-transparent rounded-2xl mx-auto relative text-amber-950 dark:text-sky-300">
       <div class="w-full h-10 flex flex-row border-1">
         <input checked type="checkbox" id="toggle-1"  class="peer/toggle1  hidden">
         <input checked type="checkbox" id="toggle-2"  class="peer/toggle2  hidden">
@@ -274,17 +285,17 @@
         <input checked type="checkbox" id="toggle-10" class="peer/toggle10 hidden">
         <input checked type="checkbox" id="toggle-11" class="peer/toggle11 hidden">
 
-        <label for="toggle-1"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle1:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-0     cursor-pointer flex items-center justify-center  peer-checked/toggle1:bg-amber-600  dark:peer-checked/toggle1:bg-black  dark:peer-not-checked/toggle1:text-sky-500   dark:peer-not-checked/toggle1:inset-ring-0"><p class="text-center">UD</p></label>  
-        <label for="toggle-2"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle2:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-1/11  cursor-pointer flex items-center justify-center  peer-checked/toggle2:bg-amber-600  dark:peer-checked/toggle2:bg-black  dark:peer-not-checked/toggle2:text-sky-500   dark:peer-not-checked/toggle2:inset-ring-0"><p class="text-center">SLD</p></label>
-        <label for="toggle-3"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle3:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-2/11  cursor-pointer flex items-center justify-center  peer-checked/toggle3:bg-amber-600  dark:peer-checked/toggle3:bg-black  dark:peer-not-checked/toggle3:text-sky-500   dark:peer-not-checked/toggle3:inset-ring-0"><p class="text-center">WAK</p></label>
-        <label for="toggle-4"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle4:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-3/11  cursor-pointer flex items-center justify-center  peer-checked/toggle4:bg-amber-600  dark:peer-checked/toggle4:bg-black  dark:peer-not-checked/toggle4:text-sky-500   dark:peer-not-checked/toggle4:inset-ring-0"><p class="text-center">PSL</p></label>
-        <label for="toggle-5"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle5:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-4/11  cursor-pointer flex items-center justify-center  peer-checked/toggle5:bg-amber-600  dark:peer-checked/toggle5:bg-black  dark:peer-not-checked/toggle5:text-sky-500   dark:peer-not-checked/toggle5:inset-ring-0"><p class="text-center">KPN</p></label>
-        <label for="toggle-6"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle6:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-5/11  cursor-pointer flex items-center justify-center  peer-checked/toggle6:bg-amber-600  dark:peer-checked/toggle6:bg-black  dark:peer-not-checked/toggle6:text-sky-500   dark:peer-not-checked/toggle6:inset-ring-0"><p class="text-center">POC</p></label>
-        <label for="toggle-7"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle7:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-6/11  cursor-pointer flex items-center justify-center  peer-checked/toggle7:bg-amber-600  dark:peer-checked/toggle7:bg-black  dark:peer-not-checked/toggle7:text-sky-500   dark:peer-not-checked/toggle7:inset-ring-0"><p class="text-center">KLD</p></label>
-        <label for="toggle-8"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle8:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-7/11  cursor-pointer flex items-center justify-center  peer-checked/toggle8:bg-amber-600  dark:peer-checked/toggle8:bg-black  dark:peer-not-checked/toggle8:text-sky-500   dark:peer-not-checked/toggle8:inset-ring-0"><p class="text-center">PSL-PL</p></label>
-        <label for="toggle-9"  class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle9:font-light  bg-amber-400 dark:bg-black absolute bottom-0 left-8/11  cursor-pointer flex items-center justify-center  peer-checked/toggle9:bg-amber-600  dark:peer-checked/toggle9:bg-black  dark:peer-not-checked/toggle9:text-sky-500   dark:peer-not-checked/toggle9:inset-ring-0"><p class="text-center">NSZZ</p></label>
-        <label for="toggle-10" class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle10:font-light bg-amber-400 dark:bg-black absolute bottom-0 left-9/11  cursor-pointer flex items-center justify-center  peer-checked/toggle10:bg-amber-600 dark:peer-checked/toggle10:bg-black dark:peer-not-checked/toggle10:text-sky-500  dark:peer-not-checked/toggle10:inset-ring-0"><p class="text-center">PPPP</p></label>
-        <label for="toggle-11" class="select-none w-1/11 h-10 inset-ring-1 peer-not-checked/toggle11:font-light bg-amber-400 dark:bg-black absolute bottom-0 left-10/11 cursor-pointer flex items-center justify-center  peer-checked/toggle11:bg-amber-600 dark:peer-checked/toggle11:bg-black dark:peer-not-checked/toggle11:text-sky-500  dark:peer-not-checked/toggle11:inset-ring-0"><p class="text-center">Inne</p></label>
+        <label for="toggle-1"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-10 md:bottom-0 left-0                  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle1:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle1:bg-amber-600  dark:peer-checked/toggle1:bg-black  dark:peer-not-checked/toggle1:text-sky-500   dark:peer-not-checked/toggle1:inset-ring-0"><p class="text-center">UD</p></label>  
+        <label for="toggle-2"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-10 md:bottom-0 left-1/6  md:left-1/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle2:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle2:bg-amber-600  dark:peer-checked/toggle2:bg-black  dark:peer-not-checked/toggle2:text-sky-500   dark:peer-not-checked/toggle2:inset-ring-0"><p class="text-center">SLD</p></label>
+        <label for="toggle-3"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-10 md:bottom-0 left-2/6  md:left-2/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle3:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle3:bg-amber-600  dark:peer-checked/toggle3:bg-black  dark:peer-not-checked/toggle3:text-sky-500   dark:peer-not-checked/toggle3:inset-ring-0"><p class="text-center">WAK</p></label>
+        <label for="toggle-4"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-10 md:bottom-0 left-3/6  md:left-3/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle4:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle4:bg-amber-600  dark:peer-checked/toggle4:bg-black  dark:peer-not-checked/toggle4:text-sky-500   dark:peer-not-checked/toggle4:inset-ring-0"><p class="text-center">PSL</p></label>
+        <label for="toggle-5"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-10 md:bottom-0 left-4/6  md:left-4/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle5:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle5:bg-amber-600  dark:peer-checked/toggle5:bg-black  dark:peer-not-checked/toggle5:text-sky-500   dark:peer-not-checked/toggle5:inset-ring-0"><p class="text-center">KPN</p></label>
+        <label for="toggle-6"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-10 md:bottom-0 left-5/6  md:left-5/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle6:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle6:bg-amber-600  dark:peer-checked/toggle6:bg-black  dark:peer-not-checked/toggle6:text-sky-500   dark:peer-not-checked/toggle6:inset-ring-0"><p class="text-center">POC</p></label>
+        <label for="toggle-7"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-0              left-1/12 md:left-6/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle7:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle7:bg-amber-600  dark:peer-checked/toggle7:bg-black  dark:peer-not-checked/toggle7:text-sky-500   dark:peer-not-checked/toggle7:inset-ring-0"><p class="text-center">KLD</p></label>
+        <label for="toggle-8"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-0              left-3/12 md:left-7/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle8:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle8:bg-amber-600  dark:peer-checked/toggle8:bg-black  dark:peer-not-checked/toggle8:text-sky-500   dark:peer-not-checked/toggle8:inset-ring-0"><p class="text-center">PSL-PL</p></label>
+        <label for="toggle-9"  class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-0              left-5/12 md:left-8/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle9:font-light  bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle9:bg-amber-600  dark:peer-checked/toggle9:bg-black  dark:peer-not-checked/toggle9:text-sky-500   dark:peer-not-checked/toggle9:inset-ring-0"><p class="text-center">NSZZ</p></label>
+        <label for="toggle-10" class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-0              left-7/12 md:left-9/11  inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle10:font-light bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle10:bg-amber-600 dark:peer-checked/toggle10:bg-black dark:peer-not-checked/toggle10:text-sky-500  dark:peer-not-checked/toggle10:inset-ring-0"><p class="text-center">PPPP</p></label>
+        <label for="toggle-11" class="select-none w-1/6 md:w-1/11 h-10 absolute bottom-0              left-9/12 md:left-10/11 inset-ring-1 hover:inset-ring-2 peer-not-checked/toggle11:font-light bg-amber-400 dark:bg-black cursor-pointer flex items-center justify-center  peer-checked/toggle11:bg-amber-600 dark:peer-checked/toggle11:bg-black dark:peer-not-checked/toggle11:text-sky-500  dark:peer-not-checked/toggle11:inset-ring-0"><p class="text-center">Inne</p></label>
         
         <div class="w-0 h-full bg-indigo-800 peer-checked/toggle1:w-1232/1  dark:bg-indigo-950 inset-ring-1"></div>
         <div class="w-0 h-full bg-red-500    peer-checked/toggle2:w-1199/1  dark:bg-red-950    inset-ring-1"></div>
@@ -297,22 +308,8 @@
         <div class="w-0 h-full bg-red-400    peer-checked/toggle9:w-505/1   dark:bg-pink-900   inset-ring-1"></div>
         <div class="w-0 h-full bg-amber-500  peer-checked/toggle10:w-327/1  dark:bg-amber-800  inset-ring-1"></div>
         <div class="w-0 h-full bg-gray-400   peer-checked/toggle11:w-1287/1 dark:bg-gray-800   inset-ring-1"></div>
-
-        
-        <!-- w-1232/10000 h-full bg-indigo-800 dark:bg-indigo-950 border-r-2
-        w-1199/10000 h-full bg-red-500 dark:bg-red-950 border-r-2
-        w-874/10000 h-full bg-blue-500 dark:bg-blue-950 border-r-2
-        w-867/10000 h-full bg-green-500 dark:bg-green-950 border-r-2
-        w-750/10000 h-full bg-amber-900 dark:bg-amber-950 border-r-2
-        w-871/10000 h-full bg-yellow-300 dark:bg-yellow-800 border-r-2
-        w-749/10000 h-full bg-cyan-700 dark:bg-cyan-950 border-r-2
-        w-547/10000 h-full bg-green-300 dark:bg-lime-900 border-r-2
-        w-505/10000 h-full bg-red-400 dark:bg-pink-900 border-r-2
-        w-327/10000 h-full bg-amber-500 dark:bg-amber-800 border-r-2
-        w-1287/10000 h-full bg-gray-400 dark:bg-gray-800 border-r-2 -->
       </div>
     </div>
-
   </section>
 
 
@@ -384,39 +381,39 @@
 
       <ul class="w-full md:w-1/5 flex flex-wrap md:flex-col text-sm md:text-base lg:text-lg gap-3 items-center justify-center text-left">
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-weizen dark:bg-weizen-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-weizen dark:bg-weizen-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Pszeniczne</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-pale-lager dark:bg-pale-lager-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-pale-lager dark:bg-pale-lager-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Jasny lager</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-pilsner dark:bg-pilsner-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-pilsner dark:bg-pilsner-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Pilzner</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-ale dark:bg-ale-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-ale dark:bg-ale-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Ale</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-marzen dark:bg-marzen-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-marzen dark:bg-marzen-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Marcowe</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-bock dark:bg-bock-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-bock dark:bg-bock-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Koźlak</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-porter dark:bg-porter-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-porter dark:bg-porter-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Porter</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-dark-lager dark:bg-dark-lager-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-dark-lager dark:bg-dark-lager-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Ciemny lager</div>
         </li>
         <li class="w-36 md:w-38 lg:w-42 h-10 flex flex-row items-center gap-2">
-          <div class="hover:animate-ping rounded-xl dark:rounded-lg bg-stout dark:bg-stout-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
+          <div class="rounded-xl dark:rounded-lg bg-stout dark:bg-stout-dark h-8 md:h-10 aspect-square border-2 border-amber-950 dark:border-1 dark:border-sky-300"></div>
           <div>Stout</div>
         </li>
       </ul>

@@ -25,10 +25,6 @@
         border-radius: 50%;
     bottom: -25vh;
     animation: animate 25s linear infinite;
-
-    @variant dark {
-      background: transparent;
-    }
   }
 
   /* Bubbles */
