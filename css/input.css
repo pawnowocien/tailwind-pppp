@@ -29,6 +29,15 @@
     --color-stout-dark: #0f0601;
 }
 
+@layer base {
+    @variant dark {
+        ::selection {
+            background-color: var(--color-neon-blue); /* Your custom highlight color */
+            color: var(--color-navy);
+        }
+    }
+  }
+
 @layer utilities {
     
     .text-pppp-sm {
